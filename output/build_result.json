@@ -1,0 +1,37 @@
+{
+  "build": {
+    "total_duration_ms": 83839,
+    "copy_version_ms": 6,
+    "cmake_configure_ms": 9307,
+    "ninja_compile_ms": 71999,
+    "copy_libs_ms": 11,
+    "copy_python_wrapper_ms": 6,
+    "build_wheel_ms": 2422,
+    "copy_wheel_ms": 9,
+    "make_run_package_ms": 78,
+    "_comment": "total_duration_ms=总耗时, copy_version_ms=版本信息写入, cmake_configure_ms=CMake配置, ninja_compile_ms=Ninja编译, copy_libs_ms=拷贝动态库, copy_python_wrapper_ms=拷贝Python绑定库, build_wheel_ms=构建Wheel包, copy_wheel_ms=拷贝Wheel包到输出目录, make_run_package_ms=制作.run安装包"
+  },
+  "Incremental build": {
+    "incremental_cmake_ms": 450,
+    "incremental_ninja_ms": 5609,
+    "total_duration_ms": 6059,
+    "modified_files_count": 5,
+    "ccache": {
+      "cache_hit_direct": 132,
+      "cache_hit_preprocessed": 0,
+      "cache_miss": 22,
+      "cache_total": 154,
+      "cache_hit_rate_percent": 85.71,
+      "_comment": "cache_hit_direct=直接缓存命中, cache_hit_preprocessed=预处理缓存命中, cache_miss=缓存未命中, cache_total=缓存查询总数, cache_hit_rate_percent=缓存命中率(%)"
+    },
+    "_comment": "安装ccache后修改5个源文件进行增量编译; incremental_cmake_ms=CMake配置, incremental_ninja_ms=Ninja编译, total_duration_ms=增量编译总耗时, modified_files_count=修改的源文件数量"
+  },
+  "UT": {
+    "total_duration_ms": 223039,
+    "dos2unix_conversion_ms": 6,
+    "cmake_configure_test_ms": 7873,
+    "build_tests_ms": 92047,
+    "run_ut_tests_ms": 123110,
+    "_comment": "total_duration_ms=UT总耗时, dos2unix_conversion_ms=dos2unix格式转换, cmake_configure_test_ms=测试CMake配置, build_tests_ms=构建测试程序, run_ut_tests_ms=运行148个测试用例(全部通过)"
+  }
+}
